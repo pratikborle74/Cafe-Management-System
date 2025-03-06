@@ -1,35 +1,95 @@
-# Cafe-Management-System
-**Cafe Management System**
+# ☕ Cafe Management System
 
-**Description:**
-This project implements a Cafe Management System in Python. It allows customers to place orders and administrators to manage the menu, track sales, and analyze data.
+A **Python-based CLI application** for managing cafe operations, including **customer orders, menu management, and revenue tracking**.
 
-**Features:**
-- Customer Menu: Place orders with personal information collection.
-- Admin Menu: Manage menu, view products/customers, analyze sales.
-- Data Management: Load menu items from CSV, save orders and customer information.
+## 📌 Features
+### **Customer Side**
+✅ **Customer Registration** (Name, Email, Phone, Address)  
+✅ **Place Orders** (Coffee, Tea, Desserts, Burgers, Pizzas)  
+✅ **View Order Summary** (Total bill calculation)  
 
-**Usage:**
-1. Run `cafe_management.py`.
-2. Select Customer or Admin menu.
-3. Follow prompts to place orders or manage menu.
+### **Admin Side**
+✅ **Menu Management** (Add & Remove items)  
+✅ **View All Products** (Coffee, Tea, Desserts, etc.)  
+✅ **View All Customers**  
+✅ **Price Distribution Visualization** (Histogram using Matplotlib)  
+✅ **Revenue Analysis** (Total revenue per customer)  
 
-**Dependencies:**
-- Python 3.x
-- pandas
-- numpy
-- matplotlib
+---
 
-**Files:**
-- `cafe_management.py`: Main script.
-- `menu_items.csv`: CSV file containing menu items.
-- `customers.csv`: CSV file containing customer information.
-- `*_order.csv`: Individual order files for customers.
+## 🏗️ Project Structure
+```
+Cafe-Management-System/
+│── data/                   # Stores CSV files for customers, menu, and orders
+│   ├── customers.csv
+│   ├── coffee_menu.csv
+│   ├── tea_menu.csv
+│   ├── desserts_menu.csv
+│   ├── burgers_menu.csv
+│   ├── pizzas_menu.csv
+│── src/                    # Source code directory
+│   ├── cafe_management.py  # Main Python script
+│── docs/                   # Documentation files (if needed)
+│── README.md               # Project documentation
+│── requirements.txt        # Dependencies
+│── .gitignore              # Exclude unnecessary files
+│── LICENSE                 # Project license
+```
 
-**Contributing:**
-- Fork the repository.
-- Create a new branch.
-- Make changes and submit a pull request.
+---
 
-**License:**
-This project is licensed under the MIT License.
+## 🚀 Installation & Usage
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/pratikborle74/Cafe-Management-System.git
+cd Cafe-Management-System
+```
+
+### **2️⃣ Install Dependencies**
+```sh
+pip install -r requirements.txt
+```
+
+### **3️⃣ Run the Application**
+```sh
+python src/cafe_management.py
+```
+
+---
+
+## 📊 Data Visualization (Admin)
+The system provides **graphical insights** using `matplotlib`:
+- **Price Distribution:** Histogram of item prices  
+- **Revenue Per Customer:** Bar chart showing total spending per customer  
+
+---
+
+## 📜 Requirements
+- **Python 3.x**
+- **pandas**
+- **matplotlib**
+
+Install dependencies using:
+```sh
+pip install -r requirements.txt
+```
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.
+
+---
+
+## 🤝 Contributing
+Feel free to **fork** this repository and submit pull requests.  
+For major changes, please open an issue first.
+
+---
+
+## 👤 Author  
+**Pratik Borle**  
+📧 Email: [pratikborle64@gmail.com](mailto:pratikborle64@gmail.com)  
+🔗 GitHub: [pratikborle74](https://github.com/pratikborle74)  
+
+---
